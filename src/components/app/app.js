@@ -1,13 +1,11 @@
 import React from "react";
 import { MainPage, CartPage } from "../pages";
 import AppHeader from "../app-header";
-import WithRestoService from "../hoc";
 import { Route, Routes } from "react-router-dom";
 
 import Background from "./food-bg.jpg";
 
-const App = ({ RestoService }) => {
-  RestoService.getMenuItems().then((data) => console.log(data));
+const App = () => {
   return (
     <div
       style={{
@@ -24,4 +22,4 @@ const App = ({ RestoService }) => {
   );
 };
 
-export default WithRestoService()(App);
+export default App;
