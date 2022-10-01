@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Background from "./food-bg.jpg";
 
 const App = ({ RestoService }) => {
-  console.log(RestoService.getMenuItems());
+  RestoService.getMenuItems().then((data) => console.log(data));
   return (
     <div
       style={{
