@@ -25,4 +25,10 @@ const deleteFromCart = (id) => {
   };
 };
 
-export { menuLoaded, menuRequested, addedToCard, deleteFromCart };
+const postData = () => {
+  return {
+    type: "POST_DATA",
+  };
+};
+
+export { menuLoaded, menuRequested, addedToCard, deleteFromCart, postData };
